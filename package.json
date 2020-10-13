@@ -1,23 +1,30 @@
 {
-  "name": "SwirlyzRanker",
-  "version": "5.15.8",
-  "description": "qbot is an advanced, easy to setup, free, and unbranded Discord-Roblox ranking bot. If at any time during setting it up you need assistance, you can join the support server here: https://discord.gg/J47m7t4",
+  "name": "Working on",
+  "version": "1.0.0",
+  "description": "a discord music bot with guild , gifs and misc commands",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "pretest": "eslint --ignore-path .gitignore .",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "engines": {
-    "node": "12.0.0"
-  },
-  "keywords": [],
-  "author": "Lengo#0001",
-  "license": "MIT",
+  "author": "Nir Gal",
+  "license": "ISC",
   "dependencies": {
-    "chalk": "^4.1.0",
-    "discord.js": "^12.2.0",
+    "cheerio": "^1.0.0-rc.3",
+    "discord.js": "github:discordjs/discord.js",
+    "discord.js-commando": "github:discordjs/Commando",
     "express": "^4.17.1",
-    "figlet": "^1.4.0",
-    "noblox.js": "^4.6.4",
-    "dotenv": "^8.2.0"
+    "ffmpeg-static": "^2.7.0",
+    "iso-639-1": "^2.1.0",
+    "node-opus": "^0.3.3",
+    "simple-youtube-api": "^5.2.1",
+    "ytdl-core": "^1.0.6"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.16.0",
+    "nodemon": "^1.19.4",
+    "prettier": "^1.19.1"
   }
 }
