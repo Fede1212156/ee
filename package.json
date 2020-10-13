@@ -1,30 +1,35 @@
 {
-  "name": "Working on",
-  "version": "1.0.0",
-  "description": "a discord music bot with guild , gifs and misc commands",
-  "main": "index.js",
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "hello-sqlite",
+  "version": "0.0.1",
+  "description": "A simple Node app with SQLite as a database management system, instantly up and running.",
+  "main": "musicbot.js",
   "scripts": {
-    "start": "node index.js",
-    "pretest": "eslint --ignore-path .gitignore .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node musicbot.js"
   },
-  "author": "Nir Gal",
-  "license": "ISC",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.3",
-    "discord.js": "github:discordjs/discord.js",
-    "discord.js-commando": "github:discordjs/Commando",
     "express": "^4.17.1",
-    "ffmpeg-static": "^2.7.0",
-    "iso-639-1": "^2.1.0",
-    "node-opus": "^0.3.3",
-    "simple-youtube-api": "^5.2.1",
-    "ytdl-core": "^1.0.6"
+    "sqlite3": "^4.1.1",
+    "discord.js": "^11.5.1",
+    "better-youtube-api": "^2.1.7",
+    "ffmpeg": "0.0.4",
+    "ffmpeg-static": "^4.0.1",
+    "opusscript": "0.0.7",
+    "ytdl-core": "^2.0.0",
+    "ytpl": "^0.1.20"
   },
-  "devDependencies": {
-    "babel-eslint": "^10.0.3",
-    "eslint": "^5.16.0",
-    "nodemon": "^1.19.4",
-    "prettier": "^1.19.1"
-  }
+  "engines": {
+    "node": "10.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/hello-sqlite"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
 }
